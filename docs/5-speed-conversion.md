@@ -1,4 +1,4 @@
-# Converting a Jensen Healey from 4-Speed to 5-Speed  
+# Converting a Jensen Healey from 4-Speed to T5 5-Speed  
 *How to turn a perfectly adequate gearbox into a sensible one*  
 *(or: “How to make your car nicer to live with without angering the gods of originality”)*
 
