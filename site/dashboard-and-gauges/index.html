@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Dashboard & Gauges - Jensen Healey Hybrid Project</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Dashboard \u0026 Gauges";
+        var mkdocs_page_input_path = "dashboard-and-gauges.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Jensen Healey Hybrid Project
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="../About-Me.md">About Me</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="../FAQ.md">FAQ</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Engineering Projects</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../engine-rebuild/">Lotus 907 Engine Rebuild</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../5-speed-conversion/">5-Speed Transmission Conversion</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../electric-motor/">Electric Motor Integration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cooling-enhancements/">Enhanced Cooling</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../efi-conversion/">EFI Conversion</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ecu-configuration/">ECU Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../battery-bms/">Battery & BMS</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../charging-port/">Charging Port</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Dashboard & Gauges</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#project-goals-design-constraints">Project Goals &amp; Design Constraints</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#goals">Goals</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#constraints">Constraints</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#system-level-rationale">System-Level Rationale</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#key-engineering-considerations">Key Engineering Considerations</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#mechanical">Mechanical</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#electrical-electronic">Electrical / Electronic</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#thermal">Thermal</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#parts-materials-tools">Parts, Materials &amp; Tools</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#major-components">Major Components</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#fabrication-custom-work">Fabrication &amp; Custom Work</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#tools">Tools</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#before-after">Before &amp; After</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#before">Before</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#after">After</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#implementation-procedure">Implementation Procedure</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#step-1">Step 1:</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-2">Step 2:</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-n-verification-validation">Step N: Verification &amp; Validation</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#testing-results">Testing &amp; Results</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#integration-notes">Integration Notes</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#lessons-learned">Lessons Learned</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#final-engineers-verdict">Final Engineer’s Verdict</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#references-supporting-material">References &amp; Supporting Material</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../interior-and-badging/">Interior & Badging</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Jensen Healey Hybrid Project</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Engineering Projects</li>
+      <li class="breadcrumb-item active">Dashboard & Gauges</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="_1"><Project Title></h1>
+<p><em><Short subtitle or wry aside that hints at the problem being solved></em></p>
+<hr />
+<h2 id="overview">Overview</h2>
+<p>Briefly describe <strong>what this sub-project is</strong> and <strong>why it exists</strong>.<br />
+This should answer, in 2–4 sentences:</p>
+<ul>
+<li>What problem are we solving?</li>
+<li>Why the factory solution was a compromise</li>
+<li>Why this change improves the car in the real world</li>
+</ul>
+<p>Think: engineering context, not a build diary.</p>
+<hr />
+<h2 id="project-goals-design-constraints">Project Goals &amp; Design Constraints</h2>
+<h3 id="goals">Goals</h3>
+<p>List the concrete outcomes you wanted:</p>
+<ul>
+<li>Improve X without compromising Y</li>
+<li>Maintain serviceability</li>
+<li>Preserve vehicle character</li>
+<li>Integrate cleanly with existing systems</li>
+</ul>
+<h3 id="constraints">Constraints</h3>
+<p>List the realities that shaped the design:</p>
+<ul>
+<li>Space limitations</li>
+<li>Heat management</li>
+<li>Weight distribution</li>
+<li>Parts availability</li>
+<li>Reversibility (if applicable)</li>
+</ul>
+<p>This section signals <strong>engineering maturity</strong>.</p>
+<hr />
+<h2 id="system-level-rationale">System-Level Rationale</h2>
+<p>Explain <em>why this approach was chosen</em> over alternatives.</p>
+<p>Cover topics like:
+- Architecture decisions
+- Tradeoffs made
+- Why certain “obvious” options were rejected
+- How this subsystem interacts with others</p>
+<p>This is where you quietly impress other engineers.</p>
+<hr />
+<h2 id="key-engineering-considerations">Key Engineering Considerations</h2>
+<p>Break this into subsections as needed:</p>
+<h3 id="mechanical">Mechanical</h3>
+<ul>
+<li>Packaging</li>
+<li>Mounting</li>
+<li>Loads</li>
+<li>Vibration</li>
+</ul>
+<h3 id="electrical-electronic">Electrical / Electronic</h3>
+<ul>
+<li>Power requirements</li>
+<li>Signal interfaces</li>
+<li>CAN / analog considerations</li>
+</ul>
+<h3 id="thermal">Thermal</h3>
+<ul>
+<li>Heat sources</li>
+<li>Cooling paths</li>
+<li>Failure modes</li>
+</ul>
+<p>Only include what’s relevant for the project.</p>
+<hr />
+<h2 id="parts-materials-tools">Parts, Materials &amp; Tools</h2>
+<h3 id="major-components">Major Components</h3>
+<ul>
+<li><Component name, spec, source></li>
+<li><Component name, spec, source></li>
+</ul>
+<h3 id="fabrication-custom-work">Fabrication &amp; Custom Work</h3>
+<ul>
+<li>Brackets</li>
+<li>Adapters</li>
+<li>Wiring harnesses</li>
+<li>Machining</li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>Specialty tools</li>
+<li>Calibration equipment</li>
+<li>Software / firmware</li>
+</ul>
+<p><em>(Optional superstition section goes here, if earned.)</em></p>
+<hr />
+<h2 id="before-after">Before &amp; After</h2>
+<h3 id="before">Before</h3>
+<blockquote>
+<p><em>Insert image(s): original configuration</em></p>
+</blockquote>
+<h3 id="after">After</h3>
+<blockquote>
+<p><em>Insert image(s): completed installation</em></p>
+</blockquote>
+<hr />
+<h2 id="implementation-procedure">Implementation Procedure</h2>
+<h3 id="step-1">Step 1: <Descriptive Step Name></h3>
+<p>Explain <strong>what happens</strong>, not just <em>what to do</em>.<br />
+Mention failure modes and “don’t do this” notes when relevant.</p>
+<hr />
+<h3 id="step-2">Step 2: <Next Step></h3>
+<p>Continue with numbered steps.<br />
+Use humor sparingly, authority generously.</p>
+<hr />
+<h3 id="step-n-verification-validation">Step N: Verification &amp; Validation</h3>
+<ul>
+<li>Torque checks</li>
+<li>Clearance checks</li>
+<li>Electrical continuity</li>
+<li>Software sanity checks</li>
+</ul>
+<p>This section differentiates tinkering from engineering.</p>
+<hr />
+<h2 id="testing-results">Testing &amp; Results</h2>
+<p>Describe:
+- What was tested
+- How it was tested
+- What improved (qualitative or quantitative)</p>
+<p>Include:
+- RPM changes
+- Temperature reductions
+- Noise/vibration improvements
+- Drive impressions</p>
+<p>Data beats adjectives.</p>
+<hr />
+<h2 id="integration-notes">Integration Notes</h2>
+<p>Document interactions with other systems:</p>
+<ul>
+<li>Cooling system</li>
+<li>Electrical system</li>
+<li>Interior ergonomics</li>
+<li>Service access</li>
+</ul>
+<p>This is gold for anyone replicating or reviewing the work.</p>
+<hr />
+<h2 id="lessons-learned">Lessons Learned</h2>
+<p>Be honest:</p>
+<ul>
+<li>What you would do differently</li>
+<li>What worked better than expected</li>
+<li>What looked easy and wasn’t</li>
+</ul>
+<p>This builds credibility faster than pretending perfection.</p>
+<hr />
+<h2 id="final-engineers-verdict">Final Engineer’s Verdict</h2>
+<p>Summarize the <strong>net effect</strong> of the sub-project:</p>
+<ul>
+<li>What problem it solved</li>
+<li>Why it was worth doing</li>
+<li>Who this upgrade is <em>for</em> (and who it isn’t)</li>
+</ul>
+<p>End with confidence, not hype.</p>
+<hr />
+<h2 id="references-supporting-material">References &amp; Supporting Material</h2>
+<ul>
+<li>Datasheets</li>
+<li>CAD screenshots</li>
+<li>Wiring diagrams</li>
+<li>Firmware configs</li>
+<li>External resources</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../charging-port/" class="btn btn-neutral float-left" title="Charging Port"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../interior-and-badging/" class="btn btn-neutral float-right" title="Interior & Badging">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../charging-port/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../interior-and-badging/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

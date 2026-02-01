@@ -1,0 +1,32 @@
+site_name: Jensen Healey Hybrid Project
+theme: readthedocs
+
+nav:
+  - Home: index.md
+  - About Me: About-Me.md
+  - FAQ: FAQ.md
+  - Engineering Projects:
+      - Lotus 907 Engine Rebuild: engine-rebuild.md
+      - 5-Speed Transmission Conversion: 5-speed-conversion.md
+      - Electric Motor Integration: electric-motor.md
+      - Enhanced Cooling: cooling-enhancements.md
+      - EFI Conversion: efi-conversion.md
+      - ECU Configuration: ecu-configuration.md
+      - Battery & BMS: battery-bms.md
+      - Charging Port: charging-port.md
+      - Dashboard & Gauges: dashboard-and-gauges.md
+      - Interior & Badging: interior-and-badging.md
+
+Engineering Projects:
+      - Lotus 907 Engine Rebuild: engine-rebuild.md
+      - 5-Speed Transmission Conversion: 5-speed-conversion.md
+      - Electric Motor Integration: electric-motor.md
+      - Enhanced Cooling: cooling-enhancements.md
+      - EFI Conversion: efi-conversion.md
+      - ECU Configuration: ecu-configuration.md
+      - Battery & BMS: battery-bms.md
+      - Charging Port: charging-port.md
+      - Dashboard & Gauges: dashboard-and-gauges.md
+      - Interior & Badging: interior-and-badging.md
+
+
