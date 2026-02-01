@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>5-Speed Transmission Conversion - Jensen Healey Hybrid Project</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "5-Speed Transmission Conversion";
+        var mkdocs_page_input_path = "5-speed-conversion.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Jensen Healey Hybrid Project
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../About-Me/">About Me</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../FAQ/">FAQ</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Jensen Engineering Projects</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">5-Speed Transmission Conversion</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#project-goals-engineering-rationale">Project Goals &amp; Engineering Rationale</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#1-powerband-utilization">1. Powerband Utilization</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-highway-cruising-mechanical-sympathy">2. Highway Cruising &amp; Mechanical Sympathy</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-drivability-in-modern-traffic">3. Drivability in Modern Traffic</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-gear-ratio-optimization">4. Gear Ratio Optimization</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#summary-why-this-is-a-corrective-upgrade">Summary: Why This Is a Corrective Upgrade</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#materials-tools">Materials &amp; Tools</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#major-components">Major Components</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#tools">Tools</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#optional-but-historically-recommended">Optional (but historically recommended)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#before-after">Before &amp; After</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#before">Before</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#after">After</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#conversion-procedure">Conversion Procedure</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#step-1-admit-the-truth">Step 1: Admit the Truth</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-2-choose-your-5-speed-wisely">Step 2: Choose Your 5-Speed (Wisely)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-3-remove-the-4-speed">Step 3: Remove the 4-Speed</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-4-bellhousing-alignment-shenanigans">Step 4: Bellhousing Alignment Shenanigans</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-5-clutch-flywheel-reality-check">Step 5: Clutch &amp; Flywheel Reality Check</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-6-mounting-crossmember">Step 6: Mounting &amp; Crossmember</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-7-driveshaft-math">Step 7: Driveshaft Math</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-8-shifter-placement">Step 8: Shifter Placement</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-9-speedometer-lies">Step 9: Speedometer Lies</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-10-fluids-fasteners-and-final-checks">Step 10: Fluids, Fasteners, and Final Checks</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#step-11-first-drive">Step 11: First Drive</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#final-mechanics-verdict">Final Mechanic’s Verdict</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../engine-rebuild/">Lotus 907 Engine Rebuild</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../electric-motor/">Electric Motor Integration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../cooling-enhancements/">Enhanced Cooling</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../efi-conversion/">EFI Conversion</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../ecu-configuration/">ECU Configuration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../battery-bms/">Battery & BMS</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../charging-port/">Charging Port</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../dashboard-and-gauges/">Dashboard & Gauges</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../interior-and-badging/">Interior & Badging</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Other Projects</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="" href="../Flamethrower.md">Flamethrower</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../Hovercraft.md">Hovercraft</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="../XKE.md">XKE Rebuild</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Jensen Healey Hybrid Project</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Jensen Engineering Projects</li>
+      <li class="breadcrumb-item active">5-Speed Transmission Conversion</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/ktc3d/JH/edit/master/docs/5-speed-conversion.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="converting-a-jensen-healey-from-4-speed-to-5-speed">Converting a Jensen Healey from 4-Speed to 5-Speed</h1>
+<p><em>How to turn a perfectly adequate gearbox into a sensible one</em><br />
+<em>(or: “How to make your car nicer to live with without angering the gods of originality”)</em></p>
+<hr />
+<h2 id="overview">Overview</h2>
+<p>Upgrading a Jensen Healey from the stock 4-speed to a 5-speed transmission is not a case of “more gears = more better.”<br />
+Done properly, it is a <strong>corrective engineering upgrade</strong> that materially improves drivability, longevity, and real-world performance—without compromising the character of the car.</p>
+<p>This conversion focuses on <strong>matching drivetrain ratios to the characteristics of the Lotus 907 engine</strong> and the realities of modern traffic, rather than chasing peak speed or novelty.</p>
+<hr />
+<h2 id="project-goals-engineering-rationale">Project Goals &amp; Engineering Rationale</h2>
+<p>The motivations for a 5-speed conversion fall into four practical engineering categories:</p>
+<ul>
+<li>Powerband utilization  </li>
+<li>Mechanical sympathy at sustained speed  </li>
+<li>Improved drivability in modern traffic  </li>
+<li>Gear ratio optimization across the drivetrain  </li>
+</ul>
+<p>Each is discussed below.</p>
+<hr />
+<h2 id="1-powerband-utilization">1. Powerband Utilization</h2>
+<p>The Lotus 907 is a rev-happy engine, but the factory 4-speed forces awkward compromises:</p>
+<ul>
+<li>Large RPM drops between gears  </li>
+<li>A choice between short gearing (fun) or tall gearing (tolerable cruising)  </li>
+<li>No way to optimize both simultaneously  </li>
+</ul>
+<p>From an engineering standpoint, this is a mismatch between engine characteristics and available ratios.</p>
+<p>A properly selected 5-speed provides:</p>
+<ul>
+<li>Closer intermediate ratios  </li>
+<li>Improved torque multiplication during acceleration  </li>
+<li>Smoother, more linear power delivery  </li>
+</ul>
+<p>This is not about increasing peak output—it is about <strong>keeping the engine where it works best</strong>.</p>
+<hr />
+<h2 id="2-highway-cruising-mechanical-sympathy">2. Highway Cruising &amp; Mechanical Sympathy</h2>
+<p>With the stock 4-speed:</p>
+<ul>
+<li>70 mph ≈ high sustained RPM  </li>
+<li>Elevated noise, vibration, and heat  </li>
+<li>Increased long-term wear  </li>
+</ul>
+<p>A 5-speed overdrive changes the equation:</p>
+<ul>
+<li>~20–30% reduction in cruising RPM  </li>
+<li>Lower average piston speed and friction losses  </li>
+<li>Reduced oil temperature and cabin noise  </li>
+</ul>
+<p>This is a <strong>longevity modification</strong>, not merely a comfort upgrade. Over thousands of miles, reduced cumulative mechanical stress matters.</p>
+<hr />
+<h2 id="3-drivability-in-modern-traffic">3. Drivability in Modern Traffic</h2>
+<p>The Jensen Healey was designed for:</p>
+<ul>
+<li>Slower highways  </li>
+<li>Shorter trips  </li>
+<li>Less congestion  </li>
+</ul>
+<p>Modern traffic demands:</p>
+<ul>
+<li>Frequent speed changes  </li>
+<li>Sustained high-speed cruising  </li>
+<li>Confident merging and passing  </li>
+</ul>
+<p>A 5-speed transmission:</p>
+<ul>
+<li>Improves throttle modulation in traffic  </li>
+<li>Reduces the need for multiple downshifts  </li>
+<li>Increases flexibility during passing and merging  </li>
+</ul>
+<p>The car stops feeling “period-correct difficult” and starts feeling <strong>naturally usable</strong>.</p>
+<hr />
+<h2 id="4-gear-ratio-optimization">4. Gear Ratio Optimization</h2>
+<p>Most 5-speed conversions allow:</p>
+<ul>
+<li>Taller final drive ratios  </li>
+<li>Retention of strong low-speed acceleration  </li>
+<li>First gear optimized for launches, fifth for cruising  </li>
+</ul>
+<p>Benefits include:</p>
+<ul>
+<li>Reduced wheelspin  </li>
+<li>Improved traction off the line  </li>
+<li>Better balance between torque, traction, and efficiency  </li>
+</ul>
+<p>This is drivetrain systems engineering—<strong>not nostalgia management</strong>.</p>
+<hr />
+<h2 id="summary-why-this-is-a-corrective-upgrade">Summary: Why This Is a Corrective Upgrade</h2>
+<p>A well-executed 5-speed conversion:</p>
+<ul>
+<li>Signals thoughtful engineering  </li>
+<li>Improves real-world usability  </li>
+<li>Enhances desirability for people who actually drive their cars  </li>
+</ul>
+<p>This is <strong>functional authenticity</strong>, not originality theater.</p>
+<hr />
+<h2 id="materials-tools">Materials &amp; Tools</h2>
+<h3 id="major-components">Major Components</h3>
+<ul>
+<li>5-speed transmission (source dependent)</li>
+<li>Appropriate bellhousing and/or adapter</li>
+<li>Modified or custom transmission mount</li>
+<li>Driveshaft modification (professional)</li>
+</ul>
+<h3 id="tools">Tools</h3>
+<ul>
+<li>Standard hand tools</li>
+<li>Torque wrench</li>
+<li>Clutch alignment tool</li>
+</ul>
+<h3 id="optional-but-historically-recommended">Optional (but historically recommended)</h3>
+<ul>
+<li>Hammer  </li>
+<li>Grease  </li>
+<li>Crowbar  </li>
+<li>Goat blood and chicken feet  </li>
+</ul>
+<p><em>(Results may vary.)</em></p>
+<hr />
+<h2 id="before-after">Before &amp; After</h2>
+<h3 id="before">Before</h3>
+<p><img alt="New Bell Housing" src="../img/5-speed.jpeg" /></p>
+<h3 id="after">After</h3>
+<blockquote>
+<p><em>Insert image: 5-speed installed</em></p>
+</blockquote>
+<hr />
+<h2 id="conversion-procedure">Conversion Procedure</h2>
+<h3 id="step-1-admit-the-truth">Step 1: Admit the Truth</h3>
+<p>Before turning a wrench, accept this:</p>
+<p>That 4-speed was fine in 1973.<br />
+Today it’s screaming along at 4,200 RPM like it’s being chased.</p>
+<p>This is not betrayal.<br />
+This is <strong>mechanical mercy</strong>.</p>
+<hr />
+<h3 id="step-2-choose-your-5-speed-wisely">Step 2: Choose Your 5-Speed (Wisely)</h3>
+<p>Select a gearbox that:</p>
+<ul>
+<li>Can actually handle the torque  </li>
+<li>Has parts availability that doesn’t involve calling a man named Nigel  </li>
+<li>Fits without requiring structural violence  </li>
+</ul>
+<p>Common choices include:</p>
+<ul>
+<li>Ford Type 9 (civilized, polite)  </li>
+<li>Toyota W-series (sturdy, unbothered)  </li>
+</ul>
+<p>If you find yourself saying <em>“this one was cheap”</em>, stop.<br />
+Cheap gearboxes are how projects become garage décor.</p>
+<hr />
+<h3 id="step-3-remove-the-4-speed">Step 3: Remove the 4-Speed</h3>
+<p><em>(Also known as: The Archaeological Dig)</em></p>
+<ul>
+<li>Disconnect and <strong>mark</strong> the driveshaft  </li>
+<li>Drain oil that smells like regret  </li>
+<li>Remove crossmember  </li>
+<li>Lower gearbox slowly and directly onto your knuckles  </li>
+</ul>
+<p>You will discover:</p>
+<ul>
+<li>One bolt you missed  </li>
+<li>One mount that is definitely original  </li>
+<li>Evidence of previous mechanics with… opinions  </li>
+</ul>
+<hr />
+<h3 id="step-4-bellhousing-alignment-shenanigans">Step 4: Bellhousing Alignment Shenanigans</h3>
+<p>You will either:</p>
+<ul>
+<li>Use an adapter plate  </li>
+<li>Swap bellhousings  </li>
+<li>Or combine both while muttering  </li>
+</ul>
+<p><strong>Key rule:</strong><br />
+If the input shaft is not perfectly aligned, the gearbox will punish you later.</p>
+<p>This is where clutch alignment tools earn respect and eyeballing earns contempt.</p>
+<hr />
+<h3 id="step-5-clutch-flywheel-reality-check">Step 5: Clutch &amp; Flywheel Reality Check</h3>
+<p>Since you are already here:</p>
+<ul>
+<li>Replace the clutch  </li>
+<li>Verify spline compatibility  </li>
+<li>Check throwout bearing travel  </li>
+</ul>
+<p>Skipping this step means removing the gearbox again, which is an excellent way to test friendships.</p>
+<hr />
+<h3 id="step-6-mounting-crossmember">Step 6: Mounting &amp; Crossmember</h3>
+<p>The new gearbox will:</p>
+<ul>
+<li>Be longer  </li>
+<li>Sit differently  </li>
+<li>Laugh at your original crossmember  </li>
+</ul>
+<p>Actions required:</p>
+<ul>
+<li>Modify or fabricate a mount  </li>
+<li>Ensure correct driveline angle  </li>
+<li>Avoid making it the lowest point on the car  </li>
+</ul>
+<p>This is where mechanics become fabricators, willingly or not.</p>
+<hr />
+<h3 id="step-7-driveshaft-math">Step 7: Driveshaft Math</h3>
+<p>Your driveshaft will now be:</p>
+<ul>
+<li>Too long  </li>
+<li>Too short  </li>
+<li>Or theoretically correct but wrong in practice  </li>
+</ul>
+<p>Solution:</p>
+<ul>
+<li>Professional length modification  </li>
+<li>Proper balancing  </li>
+<li>New U-joints  </li>
+</ul>
+<p>Skipping this step results in vibrations that feel like the car is reconsidering your life choices.</p>
+<hr />
+<h3 id="step-8-shifter-placement">Step 8: Shifter Placement</h3>
+<p><em>(The Human Interface Problem)</em></p>
+<p>Expect the shifter to:</p>
+<ul>
+<li>Appear in the wrong place  </li>
+<li>Hit the console  </li>
+<li>Emerge somewhere near your elbow  </li>
+</ul>
+<p>Solutions include:</p>
+<ul>
+<li>Bent shifter  </li>
+<li>Relocated tunnel opening  </li>
+<li>Creative trim work  </li>
+</ul>
+<p>Rule of thumb:<br />
+Your hand should fall naturally onto the shifter, not go on a scavenger hunt.</p>
+<hr />
+<h3 id="step-9-speedometer-lies">Step 9: Speedometer Lies</h3>
+<p>Your speedometer will now:</p>
+<ul>
+<li>Lie  </li>
+<li>Lie confidently  </li>
+<li>Lie faster in 5th gear  </li>
+</ul>
+<p>Fix via:</p>
+<ul>
+<li>Correct drive gear  </li>
+<li>Ratio adapter  </li>
+<li>Recalibration  </li>
+</ul>
+<p>Ignoring this turns every drive into a legal gamble.</p>
+<hr />
+<h3 id="step-10-fluids-fasteners-and-final-checks">Step 10: Fluids, Fasteners, and Final Checks</h3>
+<ul>
+<li>Fill with the <strong>correct</strong> gearbox oil  </li>
+<li>Torque everything  </li>
+<li>Check clearances  </li>
+<li>Inspect for leaks  </li>
+<li>Realize you forgot something small  </li>
+</ul>
+<p>This is normal. Panic is optional.</p>
+<hr />
+<h3 id="step-11-first-drive">Step 11: First Drive</h3>
+<p>On the test drive:</p>
+<ul>
+<li>Shifts should be crisp  </li>
+<li>No vibrations  </li>
+<li>No new noises  </li>
+<li>Fifth gear should drop RPM like a miracle  </li>
+</ul>
+<p>If it does, congratulations. You have:</p>
+<ul>
+<li>Made the car quieter  </li>
+<li>Made it faster in real life  </li>
+<li>Extended engine lifespan  </li>
+<li>Improved it without ruining its soul  </li>
+</ul>
+<hr />
+<h2 id="final-mechanics-verdict">Final Mechanic’s Verdict</h2>
+<p>A 5-speed swap is not about speed.</p>
+<p>It is about:</p>
+<ul>
+<li>Not abusing the engine  </li>
+<li>Not deafening yourself  </li>
+<li>Not pretending it’s still 1973  </li>
+</ul>
+<p>You didn’t modernize the car.<br />
+You fixed the compromise the factory had to make.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../FAQ/" class="btn btn-neutral float-left" title="FAQ"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../engine-rebuild/" class="btn btn-neutral float-right" title="Lotus 907 Engine Rebuild">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/ktc3d/JH/" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../FAQ/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../engine-rebuild/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
