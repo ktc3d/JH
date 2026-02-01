@@ -1,17 +1,12 @@
-# Welcome to MkDocs
+#  Jensen Healey Hybrid Conversion Project
+Techinal documention and descriptions of each phase.
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+![](./img/JH_garage.jpeg)
+![](./img/JH_glam.jpeg)
 
-## Commands
+## What's here?
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+* Step-by-step descriptions of each project
+* Pictures and schematics
+* Software configurations of ECU and gaugaes 
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.

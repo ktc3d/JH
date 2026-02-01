@@ -144,7 +144,7 @@ This is **functional authenticity**, not originality theater.
 ## Before & After
 
 ### Before
-> *Insert image: stock 4-speed installation*
+![New Bell Housing](img/5-speed.jpeg)
 
 ### After
 > *Insert image: 5-speed installed*

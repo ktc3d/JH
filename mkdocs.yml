@@ -1,13 +1,15 @@
 site_name: Jensen Healey Hybrid Project
+site_description:  Engineering projects related to the hybridization of my Jensen Healey
+repo_url: https://github.com/ktc3d/JH/
 theme: readthedocs
 
 nav:
   - Home: index.md
   - About Me: About-Me.md
   - FAQ: FAQ.md
-  - Engineering Projects:
-      - Lotus 907 Engine Rebuild: engine-rebuild.md
+  - Jensen Engineering Projects:
       - 5-Speed Transmission Conversion: 5-speed-conversion.md
+      - Lotus 907 Engine Rebuild: engine-rebuild.md
       - Electric Motor Integration: electric-motor.md
       - Enhanced Cooling: cooling-enhancements.md
       - EFI Conversion: efi-conversion.md
@@ -16,17 +18,7 @@ nav:
       - Charging Port: charging-port.md
       - Dashboard & Gauges: dashboard-and-gauges.md
       - Interior & Badging: interior-and-badging.md
-
-Engineering Projects:
-      - Lotus 907 Engine Rebuild: engine-rebuild.md
-      - 5-Speed Transmission Conversion: 5-speed-conversion.md
-      - Electric Motor Integration: electric-motor.md
-      - Enhanced Cooling: cooling-enhancements.md
-      - EFI Conversion: efi-conversion.md
-      - ECU Configuration: ecu-configuration.md
-      - Battery & BMS: battery-bms.md
-      - Charging Port: charging-port.md
-      - Dashboard & Gauges: dashboard-and-gauges.md
-      - Interior & Badging: interior-and-badging.md
-
-
+  - Other Projects:
+      - Flamethrower: Flamethrower.md
+      - Hovercraft: Hovercraft.md
+      - XKE Rebuild: XKE.md
