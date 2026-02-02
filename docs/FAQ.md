@@ -4,7 +4,7 @@
 
 ## Frequently Asked Questions 
 
-- Where is the clutch? 
+- Where's the clutch? 
 - Why a Jensen Healey?
 - Does it regen when you brake?
 - How much horsepower does the electric motor add?
