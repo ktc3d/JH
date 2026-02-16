@@ -4,22 +4,29 @@
 
 ---
 
-## Overview
+## Bill Of Materials
 
-Upgrading a Jensen Healey from the stock 4-speed to a 5-speed transmission is not a case of “more gears = more better.”  
-Done properly, it is a **corrective engineering upgrade** that materially improves drivability, longevity, and real-world performance—without compromising the character of the car.
-
-This conversion focuses on **matching drivetrain ratios to the characteristics of the Lotus 907 engine** and the realities of modern traffic, rather than chasing peak speed or novelty.
+| Item       | Soure | Price *(what I paid)* | Notes |
+| ----------- | ----------- |--- | ---|
+|   ‘95 Mustang Turbo T5 Transmission    |   Salvage Yard     | $200 |.68 Overdrive, “World Class” |
+|   8.5in 10 Spline Clutch |    RockAuto     | $91 | LUK 07030, only need disc. |
+|   1310 U-Joint |    Speedway Motors     | $56 | 91013128 |
+|   Adapter Plate |    Prototype Machinist     | $500 | I can make one for you or you can figure it out. |
+|   Pilot Bearing |     Ebay    | $10 | (See Later Section) |
+|   JH Getrag Bellhousing |    JH Collector     | $50 | |
+|   Driveshaft Work |      Local Shop   | $150 | |
+|    |         | | |
+|   Net |         | $1057 | |
 
 ---
 
-## Sourcing the transmission
+## Sourcing The Transmission
 
 I used a site called “Car-Part.com", which lets you search between the inventories of salvage yards nearby and afar. You should be searching for a manual transmission, denoted by “MT” in the model selection window, from a ‘95 Ford Mustang 3.8L Turbo. The site also searches for interchangeable parts, so don’t worry about this criteria being too specific. You should end up with a WC (“World Class”) with a ratio set of 3.35→1.99→1.33→1.00→0.68→R3.15. I ran this transmission with Strombergs and with EFI throttles on an effectively stock engine- while I have more power with the EFI all around- even with Strombergs, 5th was entirely usable as a cruising gear with poor, but present acceleration capabilities. Shifter placement is basically the same as the 4spd, but some minor modification is required (to the shifter) if you have the vinyl/chrome/wood center console style. (no info on the other center console style, sorry) 
 
 ---
 
-## 1. Notes on pilot bearings
+## 1. Notes On Pilot Bearings
 
 TThe T5 we are sourcing has a larger input shaft diameter compared to the 4 speed’s, so the stock pilot bearing will not fit as things are. There are a couple things we can do about this - you can:
 
@@ -41,13 +48,13 @@ That all being said, turning down the input shaft is honestly the right way to d
 
 ---
 
-## 2. Mating the assembly
+## 2. Mating The Assembly
 
 Assuming you have the transmission, bellhousing, and mating plate, congratulations, you’re ⅓ of the way there. Take the adapter plate and transmission and bolt them together with 4X 10.9-grade bolts, nuts, and lock washers. I also used red loctite because I really didn’t want this to fall off and my service interval is basically never. Now attach the bellhousing onto the adapter plate with 4X 10.9-grade bolts. You can use the 4 speed clutch arm and attach it to the 5 speed bellhousing’s pivot point. Modifying the throwout bearing to work with the 4 speed’s clutch arm is easy enough, it just needs to be grinded slightly on the contacts so that it fits in with the pegs on the clutch arm. With that all attached, now you’re ½ the way there. Nice. 
 
 ---
 
-## 3. Mating the engine
+## 3. Mating The Engine
 
 With everything together now, there’s nothing too special about what follows, if you’ve put a transmission on before, you can just skip this section … If you haven’t already, remove the old clutch pressure plate and disc. Keep the pressure plate, lose the disc. Remove the old pilot bearing (I like the bread method … Google it.) Clean out the bread and put in the new one, with a fair amount of grease. Get the splined installation tool from the LUK clutch kit, place the clutch disc on it (careful not to taint the surface), and place the end of the tool in the pilot bearing hole on the crankshaft. With that all centered, bolt on that JH pressure plate as evenly as you can, then remove the installation tool - the clutch is now installed.
 
